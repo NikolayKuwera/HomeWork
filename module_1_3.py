@@ -15,3 +15,10 @@ course_name = 'Python'
 time_for_one_task = ( hour_count / home_task)
 print('Курс:',course_name,', всего задач:',home_task, ', затрачено часов:',hour_count, ', среднее время выполнения :',time_for_one_task, 'часа')
 
+# Индексация строк
+example = 'Топинамбур'
+print(example[0])
+print(example[-1])
+print(example[5:])
+print(example[::-1])
+print(example[1::2])
