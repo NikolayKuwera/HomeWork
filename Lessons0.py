@@ -1,5 +1,7 @@
-print('Hello, world') # // целочисленное деление , / - деление
-print(type('hello, world')) # string- строка
-print('1'+'1') # concatenate
-print(type(int('5')))
+x = 0
 
+if x == 0:
+    x = 1
+    print('x был равен нулю')
+
+print(100 / x)
