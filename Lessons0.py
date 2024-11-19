@@ -51,10 +51,40 @@ from os.path import split
 #     print(a * b)
 #     i += 1
 
-while True:
-    n = int(input())
-    if n < 10:
-        continue
-    if n > 100:
-        break
-    print(n)
+# while True:
+#     n = int(input())
+#     if n < 10:
+#         continue
+#     if n > 100:
+#         break
+#     print(n)
+# s = 0
+# for i in range(1, 1001):
+#     s += i
+#     print(s)
+
+# import random
+#
+# x1 = random.randint(0, 5)
+# x2 = random.randint(0, 5)
+# x3 = random.randint(0, 5)
+# x4 = random.randint(0, 5)
+# x5 = random.randint(0, 5)
+# print(x1, x2, x3, x4, x5)
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+primes = []
+not_primes = []
+for elem in numbers:
+    Flag = True
+    for divisor in range(2, elem):
+        # print(
+        #     f'Наш элемент : {elem}, Возможный делитель : {divisor}')  # вот тут вопрос : почему наш элемент 3 и возможный делитель 2?
+        if elem % divisor == 0:
+            not_primes.append(elem)
+            Flag = False
+            break
+    if Flag == True and elem != 1:
+        primes.append(elem)
+print(primes)
+print(not_primes)
