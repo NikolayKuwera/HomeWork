@@ -12,7 +12,7 @@
 #         print('Да')
 # else:
 #     print('нет')
-from os import remove
+
 
 # sum = 0
 # x = int(input())
@@ -26,7 +26,7 @@ from os import remove
 # while n != 0:
 #     if n % 3 == 0:
 #         k += 1
-#     n = int(input('Введите число'))
+#     n = int(input('Введите число 0 , что бы закончить цикл'))
 # print(k)
 
 # n = int(input())
@@ -712,3 +712,43 @@ from os import remove
 #
 # PrHouse = ProspectHouse("Ленина", 5)
 # print(PrHouse.prospect)
+
+
+# s = []
+# for i in range(1, 21):
+#     if i % 3 == 0:
+#         s.append(i)
+# print(s)
+#
+# s1 = [i ** 3 for i in range(1, 21) if i % 3 == 0]
+# print(sum(s1))
+#
+# print(sum([i ** 3 for i in range(1, 21) if i % 3 == 0]))  # Сумма кубов в одну строку
+#
+# s = []
+# for i in range(1, 21):
+#     for j in range(1, 51):
+#         s.append((i, j))
+# print(s)
+# s1 = [(i, j) for i in range(1, 21) for j in range(1, 51)]
+# print(s1)
+
+# s = []  # Возведение в квадрат полож. числа и куб отриц. числа из списка
+# for i in range(-10, 11):
+#     if i > 0:
+#         s.append(i ** 2)
+#     else:
+#         s.append(i ** 3)
+# print(s)
+# s1 = [i ** 2 if i > 0  # короткий способ используя генератор списков
+#       else i ** 3
+#       for i in range(-10, 11)
+#       if i % 2 == 0]
+# print(s1)
+
+s = [7, 8, 8, -10, -10]  # генератор множества
+set_set = {i for i in s}
+print(set_set)
+
+dictionary = {i: i ** 10 for i in s}  # генератор словаря
+print(dictionary)
