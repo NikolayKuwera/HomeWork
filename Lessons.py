@@ -26,7 +26,7 @@
 # while n != 0:
 #     if n % 3 == 0:
 #         k += 1
-#     n = int(input('Введите число 0 , что бы закончить цикл'))
+#     n = int(input('Введите число '0', что бы закончить цикл'))
 # print(k)
 
 # n = int(input())
@@ -745,10 +745,3 @@
 #       for i in range(-10, 11)
 #       if i % 2 == 0]
 # print(s1)
-
-s = [7, 8, 8, -10, -10]  # генератор множества
-set_set = {i for i in s}
-print(set_set)
-
-dictionary = {i: i ** 10 for i in s}  # генератор словаря
-print(dictionary)

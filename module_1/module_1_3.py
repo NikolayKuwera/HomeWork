@@ -25,3 +25,39 @@
 #
 #
 # print('привет,', 'я'.upper(), 'строка в нижнем регистре')
+from itertools import count
+
+
+# def kolglas(k):
+#     gl = 'уеёыаоэяиюУЕЁЫАОЭЯИЮ'
+#     count = 0
+#     for c in k:
+#         if c in gl:
+#             count += 1
+#     return count
+#
+#
+# a = input()
+# print(kolglas(a))
+
+# def glas(s):
+#     ns = ''
+#     for c in s:
+#         if c in 'уеыаоэяиюёЁУЕЫАОЭЯИЮ':
+#             ns = ns + c
+#     return ns
+#
+#
+# a = input()
+# print(glas(a))
+def поздоровайся(имя):
+    print("Привет, " + имя + "!")
+
+
+def сообщение(имя, вопрос):
+    поздоровайся(имя)
+
+    print("Скажи, " + вопрос)
+
+
+сообщение("Nick", "когда летим на Марс?")
