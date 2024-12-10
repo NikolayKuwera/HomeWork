@@ -10,9 +10,19 @@
 # tm = start + urok + per
 # print(tm // 60, 'ч', ':', tm % 60, 'мин', sep=(''))
 
-a = int(input('Введите число :'))
-b = int(input('Введите число :'))
-M = a
-if b > M:
-    M = b
-print(M)
+# a = int(input("Введите число :"))
+# b = int(input("Введите число :"))
+# M = a
+# if b > M:
+#     M = b
+# print(M)
+
+
+# def summa(n):
+#     if n == 0:
+#         return 0
+#     else:
+#         return n + summa(n - 1)
+#
+#
+# print(summa(3))
