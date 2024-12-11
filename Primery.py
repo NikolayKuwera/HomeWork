@@ -62,12 +62,23 @@ from subprocess import check_output
 # print(count_even([1, 5, 4, 8, 3, 6, 0]))
 
 
-def unicum(list_):
-    new_list = []
-    for i in list_:
-        if i not in new_list:
-            new_list.append(i)
-    return new_list
+# def unicum(list_):
+#     new_list = []
+#     for i in list_:
+#         if i not in new_list:
+#             new_list.append(i)
+#     return new_list
+#
+#
+# print(unicum([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]))
 
+name = "Eric"
+profession = "comedian"
+affiliation = "Monty Python"
+message = f"""
+    Hi {name}. 
+    You are a {profession}. 
+    You were in {affiliation}.
+"""
 
-print(unicum([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]))
+print(message)
